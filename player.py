@@ -20,7 +20,8 @@ class Player(CircleShape):
             screen, 
             (255, 255, 255), #white
             self.triangle(), #list of points
-            2) #line_width
+            2 #line_width
+        )
 
     def rotate(self, dt):
         self.rotation += PLAYER_TURN_SPEED * dt
@@ -37,5 +38,5 @@ class Player(CircleShape):
             self.move(-dt)
 
     def move(self, dt):
-        forward = pygame.math.Vector2(0, 1).rotate(self.rotation)
+        forward = pygame.Vector2(0, 1).rotate(self.rotation)
         self.position += forward * PLAYER_SPEED * dt
