@@ -1,2 +1,2 @@
 # asteroids
-Boot.dev "Build Asteroids" course repository
+Boot.dev project to build a clone of the classic Asteroids game using Pygame.
